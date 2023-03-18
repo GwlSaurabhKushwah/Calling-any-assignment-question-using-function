@@ -1,0 +1,252 @@
+def ques1():
+    print(" Q1:- WAP to display the last digit of a number. Take number as input.")
+    num = int(input("Enter the Number:"))
+    print(num%10) 
+    return  
+
+def ques2():
+    print("Q2:- Display all the numbers that are divisible by 5 from a list, l = [95, 52, -410, 57, 55, 10. -85, 740, 81]")
+    l = [95, 52, -410, 57, 55, 10. - 85, 740, 81]
+    for i in l:
+        if i % 5 == 0:
+            print(i , end=',')
+   
+    return 
+
+def ques3():
+        print ("Q3:- WAP to calculate the count of elements in a string taken as input from the user.")
+        str = input("Enter string:")
+        print(len(str))
+        return 
+
+def ques4():
+    print("Q4:- WAP to check if a number is even or odd where number is taken as input.")
+    num= int(input("Enter the number:"))
+    if num % 2 == 0:   print("Even Number")
+    else:                        print("Odd Number")
+
+    #print("Shorthand notation")
+    #print("Even") if int(input("enter the number:"))%2==0 else print("odd")
+    return 
+
+def ques5():
+    print("Q5:- String in a reverse order")
+    string = input("Enter the string:")
+    print(string[::-1])
+   
+    return 
+
+
+
+def ques6():
+    print("Q6:- WAP to check if 3rd last digit of a number, taken as input, is divisible by 7 or not.")
+    num = input("Enter the number:")
+    num2=int(num[-3])
+    print(num2)
+    if num2 % 7 == 0 :    print("Divisible by 7")
+    else:                            print("Not Divisible by 7") 
+    return  
+
+def ques7():
+    print("Q7:- Print characters from a string that are present at an even index number")
+    string = input("Enter the string:")
+    print(string[2::2])
+    return 
+
+
+def ques8(): 
+    print("Q8:- Check if a first and last number is same")
+    num= int(input("Enter the length of list:"))
+    lst = []
+    for i in range(num):
+        lst1 = int(input("Enter the Number:"))
+        lst.append(lst1)
+        if lst[0] == lst[-1]:    print('yes')
+        else:                          print("no")
+        
+        return 
+
+def ques9():
+    print("Q9:- Calculate income tax for the input income by adhering to the Indian rules.")
+    income = float(input("Enter your income: "))
+    if income <=250000:
+        tax =0
+    elif income <=500000:
+        tax = (income - 250000) * 0.05
+    elif income <=1000000:
+        tax = ((250000)*0.05 + (income - 500000) * 0.2)
+    else:
+        tax = 112500 + (income - 1000000) * 0.3
+
+    print("You have to pay: ", tax )
+
+
+    return 
+
+def ques10():
+    print("string in a reverse order")
+    string = input("Enter the string:")
+    print(string[::-1])
+   
+    return 
+
+
+
+def ques11():
+    print("Q11:- Write a Python program to check if all the characters of a string are vowel or not.")
+    str1 = input("Enter the string:")
+    vowel = 'aeiouAEIOU'
+    for x in str1:
+        if x not in vowel:
+            print("All characters are not vowel")
+            break
+        else: print("All characters are vowel")
+    return  
+
+def ques12():
+    print("Q12:- WAP to calculate percentage of a student through 5 subjects. Take marks as input from the user.")
+    eng = int(input("Enter your English marks out of 100:-"))
+    maths = int(input("Enter your Maths marks out of 100:-"))
+    science = int(input("Enter your science marks out of 100:-"))
+    hindi = int(input("Enter your hindi marks out of 100:-"))
+    sst = int(input("Enter your sst marks out of 100:-"))
+    print("----------------------------------------------")
+    total = eng + maths + science + hindi + sst
+    if eng <= 100 and maths <= 100 and science <= 100 and hindi <= 100 and sst <= 100:
+        if (total <= 500):
+            print("Total---->", total, '\n')
+            print('\n', "English:", eng, '\n', "Maths:", maths, '\n', "Science:", science, '\n', "Hindi", hindi, '\n',"SST:", sst)
+            print("Percentage:-", total / 500 * 100)
+
+        else:
+            print("Total", total)
+            print("Please Enter Correct Marks.......")
+    else:
+        print("Wrong input")
+
+    return 
+
+def ques13():
+    print("Q13:- WAP to convert '95.3' taken as input from the user into float value. ")
+    value = input("Enter the value:")
+    flt = float(value)
+    print(flt,type(flt))
+    return 
+
+def ques14():
+    print("Q14:- WAP to count the number of zeroes present in a number taken as input from the user.")
+    num =input("Enter the number:")
+    count = 0
+    if num == '0':
+        count+=1
+    else:
+        print("No Zeroes found")
+    return 
+
+def ques15():
+    print("Q15:- Find area of Triangle")
+    base = int(input("Enter Base Value:"))
+    height= int(input("Enter height:"))
+    area = 1/2 * base * height
+    print(area)
+   
+    return 
+
+
+
+def ques16():
+    print("Q16:- WAP to accept day number from a user and print the day. For example, if input = 1 output = Monday")
+    d= {1:'monday',2:'tuesday',3:'wednesday',4:'thursday',5:'friday',6:'saturday',7:'sunday'}
+    daynum = int(input("enter the number:"))
+    print(d[daynum])
+
+    return  
+
+def ques17():
+    print("Q17:- WAP to check whether a person is eligible to vote or not based on their age.")
+    age= int(input("Enter Your Age:"))
+    if age >= 18 :    print("You are Eligible for Vote")
+    else:                   print("You are Not Eligible for Vote")
+   
+    return 
+
+def ques18():
+        print ("Q18:- WAP to calculate the count of elements in a string taken as input from the user.")
+        num = int(input("Enter the length of number:"))
+        sum = 0
+        for i in range(0,num):
+            n= int(input("enter the values:"))
+            sum+=n
+        print("The sum of the numbers is:",sum)
+        return 
+
+def ques19():
+    print("Q19:- WAP to check if a number is even or odd where number is taken as input.")
+    num = int(input("Enter the length of list:"))
+    lst = []
+    lst2= []
+    lst3= []
+    for i in range(num):
+        x = int(input("enter the number:"))
+        lst.append(x)
+
+    for n in lst:
+        if n % 2==0:
+            lst2.append(n)
+            lst3.append(n**2)
+        else:
+            print("No Even Numbers in the List")
+
+    print("-------Even Numbers in the List----------")
+    print(lst2)
+    print("---------Here is the Squares the the digits-------")
+    print(lst3)
+    return 
+
+def ques20():
+    print("Q20:- Write a Python program to find the sum of the first n positive integers. Take n as input from the user.")
+    n = int(input("Enter a positive integer: "))
+    sum = 0
+
+    for i in range(1, n+1):
+        sum += i
+
+    print("The sum of the first", n, "positive integers is:", sum)
+   
+    return 
+
+
+
+
+
+
+choice = input("Enter your question choice:").lower()
+if choice ==    'q1':       ques1()
+elif choice == 'q2':       ques2()
+elif choice == 'q3':       ques3()
+elif choice == 'q4':       ques4()
+elif choice == 'q5':       ques5()
+    
+elif choice == 'q6':        ques6()
+elif choice == 'q7':        ques7()
+elif choice == 'q8':        ques8()
+elif choice == 'q9':        ques9()
+elif choice == 'q10':      ques10()
+    
+elif choice == 'q11':       ques11()
+elif choice == 'q12':       ques12()
+elif choice == 'q13':       ques13()
+elif choice == 'q14':       ques14()
+elif choice == 'q15':       ques15()
+
+elif choice == 'q16':       ques16()
+elif choice == 'q17':       ques17()
+elif choice == 'q18':       ques18()
+elif choice == 'q19':       ques19()
+elif choice == 'q20':       ques20()
+else:                               print("Questions out of range")    
+
+    
+
+
+    
